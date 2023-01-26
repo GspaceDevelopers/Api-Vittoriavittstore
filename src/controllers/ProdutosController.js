@@ -216,7 +216,7 @@ class ProdutoController {
           imgurl15: imgurl15,
           cor5: cor5,
           tamanhos: {
-            tamanhoOne: { tamanho13: tamanho17, quantidade17: quantidade17 },
+            tamanhoOne: { tamanho17: tamanho17, quantidade17: quantidade17 },
             tamanhoTwo: { tamanho18: tamanho18, quantidade18: quantidade18 },
             tamanhoThree: { tamanho19: tamanho19, quantidade19: quantidade19 },
             tamanhoFour: { tamanho20: tamanho20, quantidade20: quantidade20 },
