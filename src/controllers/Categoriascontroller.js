@@ -17,7 +17,7 @@ class Categoriascontroller {
     }
      async delete(req, res) {
          const { _id } = req.params
-        const categorialist = await Categorias.deleteOnde({_id:_id})
+        const categorialist = await Categorias.deleteOne({_id:_id})
 
         return res.json(categorialist)
     }
