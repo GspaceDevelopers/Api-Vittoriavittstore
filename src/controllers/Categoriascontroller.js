@@ -15,6 +15,12 @@ class Categoriascontroller {
 
         return res.json(categorialist)
     }
+        async delete(req, res) {
+            const {_id} = req.params
+        const categorialist = await Categorias.deleteOne({_id:_id})
+
+        return res.json(categorialist)
+    }
 }
 
 export default new Categoriascontroller();
