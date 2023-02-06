@@ -11,6 +11,7 @@ const Edicaohome = new Schema({
         logo5: String,
         logo6: String,
         logo7: String,
+        logo8: String,
     },
     backgoundhome: {
         background1: String,
@@ -29,6 +30,7 @@ const Edicaohome = new Schema({
         banner5: String,
         banner6: String,
         banner7: String,
+        banner8: String,
     }
 })
 

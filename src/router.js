@@ -96,7 +96,7 @@ routes.get('/cores', Corescontroller.get)
 
 routes.post('/categorias', Categoriascontroller.post)
 routes.get('/categorias', Categoriascontroller.get)
-routes.delete('/categorias/:_id', Categoriascontroller.delete)
+
 
 
 export default routes;
