@@ -71,7 +71,7 @@ class EdicaohomeController {
         return res.json(Edicaolist)
     }
     async get(req, res) {
-        const Edicaolist = await Edicaohome.find({})
+        const Edicaolist = await Edicaohome.find()
         return res.json(Edicaolist)
     }
 }
