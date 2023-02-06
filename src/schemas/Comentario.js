@@ -4,8 +4,8 @@ const Comentario = new Schema({
   user: String,
   idproduto: String,
   comentario: String,
-  printcomentario: Boolean,
+  printcomentario: String,
   star: String,
-  data: Date,
+  data: String,
 });
 export default model("Comentario", Comentario);
