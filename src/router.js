@@ -14,6 +14,7 @@ import Sandemailcontroller from "./controllers/Sandemailcontroller";
 import Corescontroller from "./controllers/Corescontroller";
 import CartoesController from "./controllers/CartoesController";
 import Categoriascontroller from "./controllers/Categoriascontroller";
+import Pergunrascontroller from "./controllers/Pergunrascontroller";
 
 const routes = new Router();
 
@@ -98,5 +99,9 @@ routes.post('/categorias', Categoriascontroller.post)
 routes.get('/categorias', Categoriascontroller.get)
 routes.delete('/categorias/:_id', Categoriascontroller.delete)
 
+
+routes.post('/perguntas', Pergunrascontroller.post)
+routes.put('/perguntas/:_id', Pergunrascontroller.put)
+routes.get('/perguntas', Pergunrascontroller.get)
 
 export default routes;
