@@ -19,6 +19,12 @@ class Perguntascontroller {
         })
         return res.json(perguntaslist)
     }
+    async delete(req, res) {
+        const { _id } = req.params
+
+        const perguntaslist = await Perguntas.deleteOne({ _id: _id })
+        return res.json(perguntaslist)
+    }
     async get(req, res) {
         const perguntaslist = await Perguntas.find()
         return res.json(perguntaslist)

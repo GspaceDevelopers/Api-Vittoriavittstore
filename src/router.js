@@ -102,6 +102,7 @@ routes.delete('/categorias/:_id', Categoriascontroller.delete)
 
 routes.post('/perguntas', Pergunrascontroller.post)
 routes.put('/perguntas/:_id', Pergunrascontroller.put)
+routes.delete('/perguntas/:_id', Pergunrascontroller.delete)
 routes.get('/perguntas', Pergunrascontroller.get)
 
 export default routes;
