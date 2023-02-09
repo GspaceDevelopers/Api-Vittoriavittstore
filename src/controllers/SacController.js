@@ -14,7 +14,7 @@ class Saccontroller {
         })
         return res.json(saclist)
     }
-    async get(res, req) {
+    async get(req,res) {
         const saclist = await Sac.find()
         return res.json(saclist)
     }
