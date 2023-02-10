@@ -4,6 +4,7 @@ import { Schema, model } from 'mongoose'
 const Edicaohome = new Schema({
     componentetexto1: String,
     bannermodalpromocao: String,
+    bannercentralhome:String,
     componentelogos: {
         logo1: String,
         logo2: String,
