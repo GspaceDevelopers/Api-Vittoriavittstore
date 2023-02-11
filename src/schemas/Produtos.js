@@ -17,6 +17,12 @@ const Produtos = new Schema({
   subcategoria2: String,
   subcategoria3: String,
   subcategoria4: String,
+  peso:String,
+  comprimento:String,
+  altura:String,
+  largura:String,
+  diametro:String,
+  formato:String,
   cores: {
     corPrimary: {
       imgurl: String,
