@@ -68,6 +68,12 @@ class ProdutoController {
       subcategoria2,
       subcategoria3,
       subcategoria4,
+        peso,
+  comprimento,
+  altura,
+  largura,
+  diametro,
+  formato,
       cores: {
         corPrimary: {
           imgurl: imgurl,
@@ -161,6 +167,12 @@ class ProdutoController {
       subcategoria2,
       subcategoria3,
       subcategoria4,
+              peso,
+  comprimento,
+  altura,
+  largura,
+  diametro,
+  formato,
       cores: {
         corPrimary: {
           imgurl: imgurl,
@@ -266,6 +278,12 @@ class ProdutoController {
       subcategoria2,
       subcategoria3,
       subcategoria4,
+              peso,
+  comprimento,
+  altura,
+  largura,
+  diametro,
+  formato,
       cores: {
         corPrimary: {
           imgurl: imgurl,
@@ -360,6 +378,12 @@ class ProdutoController {
         subcategoria2,
         subcategoria3,
         subcategoria4,
+                peso,
+  comprimento,
+  altura,
+  largura,
+  diametro,
+  formato,
         cores: {
           corPrimary: {
             imgurl: imgurl,
