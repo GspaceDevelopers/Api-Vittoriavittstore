@@ -53,6 +53,8 @@ class ProdutoController {
   async store(req, res) {
     const {
       sku:sku,
+      brinde: brinde,
+      aparecercampobrinde: aparecercampobrinde,
       produto: produto,
       precomaior: precomaior,
       preco: preco,
@@ -152,7 +154,9 @@ class ProdutoController {
     } = req.body;
 
     const Produtolist = await Produtos.create({
-      sku,sku,
+      sku:sku,
+      brinde: brinde,
+      aparecercampobrinde: aparecercampobrinde,
       produto: produto,
       precomaior: precomaior,
       preco: preco,
@@ -266,6 +270,8 @@ class ProdutoController {
     const {
       sku:sku,
       produto: produto,
+      brinde: brinde,
+      aparecercampobrinde: aparecercampobrinde,
       precomaior: precomaior,
       preco: preco,
       modelo: modelo,
@@ -367,6 +373,8 @@ class ProdutoController {
       {
         sku:sku,
         produto: produto,
+        brinde: brinde,
+      aparecercampobrinde: aparecercampobrinde,
         precomaior: precomaior,
         preco: preco,
         modelo: modelo,
