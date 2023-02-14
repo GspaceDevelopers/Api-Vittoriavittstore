@@ -52,6 +52,7 @@ class ProdutoController {
 
   async store(req, res) {
     const {
+      sku:sku,
       produto: produto,
       precomaior: precomaior,
       preco: preco,
@@ -151,6 +152,7 @@ class ProdutoController {
     } = req.body;
 
     const Produtolist = await Produtos.create({
+      sku,sku,
       produto: produto,
       precomaior: precomaior,
       preco: preco,
@@ -262,6 +264,7 @@ class ProdutoController {
     const { _id } = req.params;
 
     const {
+      sku:sku,
       produto: produto,
       precomaior: precomaior,
       preco: preco,
@@ -362,6 +365,7 @@ class ProdutoController {
     const Produtolist = await Produtos.updateOne(
       { _id: _id },
       {
+        sku:sku,
         produto: produto,
         precomaior: precomaior,
         preco: preco,
