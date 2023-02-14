@@ -9,7 +9,7 @@ class EdicaohomeController {
             bannerpaginaprod:bannerpaginaprod,
              bannermodalpromocao:bannermodalpromocao ,
             bannercentralhome:bannercentralhome,
-            aparecercampobrinde:aparecercampobrinde
+            aparecercampobrinde:aparecercampobrinde,
             componentelogos: {
                 logo1: logo1,
                 logo2: logo2,
@@ -49,7 +49,7 @@ class EdicaohomeController {
             bannerpaginaprod:bannerpaginaprod,
             bannermodalpromocao:bannermodalpromocao,
             bannercentralhome:bannercentralhome,
-            aparecercampobrinde:aparecercampobrinde
+            aparecercampobrinde:aparecercampobrinde,
             componentelogos: {
                 logo1: logo1,
                 logo2: logo2,
