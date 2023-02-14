@@ -3,7 +3,7 @@ import { Schema, model } from "mongoose";
 const Produtos = new Schema({
   sku:String,
   brinde: String,
-      aparecercampobrinde: aparecercampobrinde,
+      aparecercampobrinde: String,
   produto: String,
   precomaior: String,
   preco: String,
