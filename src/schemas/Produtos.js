@@ -2,6 +2,8 @@ import { Schema, model } from "mongoose";
 
 const Produtos = new Schema({
   sku:String,
+  brinde: brinde,
+      aparecercampobrinde: aparecercampobrinde,
   produto: String,
   precomaior: String,
   preco: String,
