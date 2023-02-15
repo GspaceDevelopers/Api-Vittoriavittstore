@@ -2,9 +2,13 @@ import Categorias from '../schemas/Categorias'
 
 class Categoriascontroller {
     async post(req, res) {
-        const { categoria } = req.body
+        const { categoria,sub1,sub2,sub3,sub4 } = req.body
         const categorialist = await Categorias.create({
-            categoria: categoria
+            categoria: categoria,
+            sub1:sub1,
+            sub2:sub2,
+            sub3:sub3,
+            sub4:sub4,
         })
 
         return res.json(categorialist)
