@@ -8,6 +8,12 @@ const Edicaohome = new Schema({
     bannermodalpromocao: String,
     bannercentralhome:String,
     aparecercampobrinde:String,
+    url1:String,
+     url2:String,
+     url3:String,
+     url4:String,
+     url5:String,
+     url6:String,
     componentelogos: {
         logo1: String,
         logo2: String,
