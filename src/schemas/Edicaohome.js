@@ -40,7 +40,16 @@ const Edicaohome = new Schema({
         banner5: String,
         banner6: String,
         banner7: String,
-    }
+    },
+    linkredes:{
+        link1:String,
+        link2:String,
+        link3:String,
+    },
+    telefoneloja:String,
+    emailloja:String,
+    cnpjloja:String
+
 })
 
 export default model("Edicaohome", Edicaohome);
