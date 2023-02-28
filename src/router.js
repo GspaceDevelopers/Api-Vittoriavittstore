@@ -15,6 +15,9 @@ import Corescontroller from "./controllers/Corescontroller";
 import CartoesController from "./controllers/CartoesController";
 import Categoriascontroller from "./controllers/Categoriascontroller";
 import Pergunrascontroller from "./controllers/Pergunrascontroller";
+import EditarSobre from "./controllers/EditarSobre";
+import EditarContato from "./controllers/EditarContato";
+import Politicadeprivacidade from "./controllers/Politicadeprivacidade";
 
 const routes = new Router();
 
@@ -87,22 +90,34 @@ routes.get("/comentarios", Comentario.index);
 routes.put("/comentarios/:_id", Comentario.update);
 routes.get("/comentarios/:_id", Comentario.index2);
 
+routes.post("/send", Sandemailcontroller.post);
 
-routes.post('/send', Sandemailcontroller.post)
+routes.post("/cores", Corescontroller.post);
+routes.get("/cores", Corescontroller.get);
 
+routes.post("/categorias", Categoriascontroller.post);
+routes.get("/categorias", Categoriascontroller.get);
+routes.delete("/categorias/:_id", Categoriascontroller.delete);
 
+routes.post("/perguntas", Pergunrascontroller.post);
+routes.put("/perguntas/:_id", Pergunrascontroller.put);
+routes.delete("/perguntas/:_id", Pergunrascontroller.delete);
+routes.get("/perguntas", Pergunrascontroller.get);
+//rotas sobre
 
-routes.post('/cores', Corescontroller.post)
-routes.get('/cores', Corescontroller.get)
+routes.post("/sobre", EditarSobre.post);
+routes.get("/sobre", EditarSobre.get);
+routes.put("/sobre", EditarSobre.update);
 
-routes.post('/categorias', Categoriascontroller.post)
-routes.get('/categorias', Categoriascontroller.get)
-routes.delete('/categorias/:_id', Categoriascontroller.delete)
+//rotas CONTATO
 
+routes.post("/contatoedit", EditarContato.post);
+routes.get("/contatoedit", EditarContato.get);
+routes.put("/contatoedit", EditarContato.update);
 
-routes.post('/perguntas', Pergunrascontroller.post)
-routes.put('/perguntas/:_id', Pergunrascontroller.put)
-routes.delete('/perguntas/:_id', Pergunrascontroller.delete)
-routes.get('/perguntas', Pergunrascontroller.get)
+//rotas Politica
 
+routes.post("/politicaedit", Politicadeprivacidade.post);
+routes.get("/politicaedit", Politicadeprivacidade.get);
+routes.put("/politicaedit", Politicadeprivacidade.update);
 export default routes;
