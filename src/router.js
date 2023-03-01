@@ -33,6 +33,7 @@ routes.get("/modelo", ProdutosController.index6);
 routes.get("/promocao", ProdutosController.index7);
 routes.get("/promocao2", ProdutosController.index8);
 routes.get("/desconto", ProdutosController.index9);
+routes.get("/categoria", ProdutosController.index10);
 routes.delete("/produtos/:_id", ProdutosController.delete);
 routes.put("/produtos/:_id", ProdutosController.update);
 
