@@ -48,7 +48,31 @@ const Edicaohome = new Schema({
     },
     telefoneloja:String,
     emailloja:String,
-    cnpjloja:String
+    cnpjloja:String,
+    categoriabtnhome1:{
+    img1:String,
+    title1:String,
+    },
+    categoriabtnhome2:{
+    img2:String,
+    title2:String,
+    },
+    categoriabtnhome3:{
+    img3:String,
+    title3:String,
+    },
+    categoriabtnhome4:{
+    img4:String,
+    title4:String,
+    },
+    categoriabtnhome5:{
+    img5:String,
+    title5:String,
+    },
+    categoriabtnhome6:{
+    img6:String,
+    title6:String,
+    },
 
 })
 

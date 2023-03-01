@@ -22,7 +22,6 @@ import Politicadeprivacidade from "./controllers/Politicadeprivacidade";
 const routes = new Router();
 
 //rotas principais
-
 routes.post("/produtos", ProdutosController.store);
 routes.get("/produtos", ProdutosController.index);
 routes.get("/produtos/:_id", ProdutosController.index2);
