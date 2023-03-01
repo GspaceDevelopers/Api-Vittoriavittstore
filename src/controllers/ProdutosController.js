@@ -49,6 +49,11 @@ class ProdutoController {
     const Produtolist = await Produtos.find({ desconto: desconto });
     return res.json(Produtolist);
   }
+  async index10(req, res) {
+    const { categoria } = req.query;
+    const Produtolist = await Produtos.find({ categoria: categoria });
+    return res.json(Produtolist);
+  }
 
   async store(req, res) {
     const {
