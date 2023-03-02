@@ -38,6 +38,7 @@ routes.get("/desconto", ProdutosController.index9);
 routes.get("/categoria", ProdutosController.index10);
 routes.delete("/produtos/:_id", ProdutosController.delete);
 routes.put("/produtos/:_id", ProdutosController.update);
+routes.put("/produtosimg/:_id", ProdutosController.updateimg);
 
 //rota queryes
 routes.get("/produto", QueryesController.getproduto);

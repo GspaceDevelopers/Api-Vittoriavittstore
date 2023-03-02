@@ -479,6 +479,93 @@ class ProdutoController {
     );
     return res.json(Produtolist);
   }
+
+  async updateimg(req,res){
+    const {_id}= req.params
+
+    const {
+      corPrimary: {
+        imgurl: imgurl,
+        imgurl2: imgurl2,
+        imgurl3: imgurl3,
+       
+      },
+      corSecondary: {
+        imgurl4: imgurl4,
+        imgurl5: imgurl5,
+        imgurl6: imgurl6,
+       
+      },
+      corTertiary: {
+        imgurl7: imgurl7,
+        imgurl8: imgurl8,
+        imgurl9: imgurl9,
+        
+      },
+      corQuaternary: {
+        imgurl10: imgurl10,
+        imgurl11: imgurl11,
+        imgurl12: imgurl12,
+       
+      },
+      corFive: {
+        imgurl13: imgurl13,
+        imgurl14: imgurl14,
+        imgurl15: imgurl15,
+        
+      },
+      corSix: {
+        imgurl16: imgurl16,
+        imgurl17: imgurl17,
+        imgurl18: imgurl18,
+        
+      },
+    } = req.body
+
+
+    const updateimglist = await Produtos.updateOne({_id:_id},{
+      cores: {
+        corPrimary: {
+          imgurl: imgurl,
+          imgurl2: imgurl2,
+          imgurl3: imgurl3,
+         
+        },
+        corSecondary: {
+          imgurl4: imgurl4,
+          imgurl5: imgurl5,
+          imgurl6: imgurl6,
+         
+        },
+        corTertiary: {
+          imgurl7: imgurl7,
+          imgurl8: imgurl8,
+          imgurl9: imgurl9,
+          
+        },
+        corQuaternary: {
+          imgurl10: imgurl10,
+          imgurl11: imgurl11,
+          imgurl12: imgurl12,
+         
+        },
+        corFive: {
+          imgurl13: imgurl13,
+          imgurl14: imgurl14,
+          imgurl15: imgurl15,
+          
+        },
+        corSix: {
+          imgurl16: imgurl16,
+          imgurl17: imgurl17,
+          imgurl18: imgurl18,
+          
+        },
+      },
+    })
+
+    return res.json(updateimglist)
+  }
 }
 
 export default new ProdutoController();
