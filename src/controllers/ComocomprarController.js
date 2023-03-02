@@ -3,17 +3,19 @@ import Comocomprar from '../schemas/Editacomocomprar'
 
 class ComocomprarController {
     async post(req, res) {
-        const { urlbanner } = req.body
+        const { urlbanner,urlbannermobile } = req.body
         const banner = await Comocomprar.create({
-            urlbanner: urlbanner
+            urlbanner: urlbanner,
+            urlbannermobile:urlbannermobile
         })
         return res.json(banner)
     }
     async update(req, res) {
         const { _id } = req.params
-        const { urlbanner } = req.body
+        const { urlbanner,urlbannermobile } = req.body
         const banner = await Comocomprar.updateOne({ _id }, {
-            urlbanner: urlbanner
+            urlbanner: urlbanner,
+            urlbannermobile:urlbannermobile
         })
         return res.json(banner)
     }
