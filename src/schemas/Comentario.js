@@ -7,5 +7,6 @@ const Comentario = new Schema({
   printcomentario: String,
   star: String,
   data: String,
+  liberar: String,
 });
 export default model("Comentario", Comentario);

@@ -89,7 +89,9 @@ routes.post("/comentarios", Comentario.post);
 routes.get("/comentarios", Comentario.index);
 routes.put("/comentarios/:_id", Comentario.update);
 routes.get("/comentarios/:_id", Comentario.index2);
+routes.delete("/comentarios/:_id", Comentario.del);
 
+// delete comment
 routes.post("/send", Sandemailcontroller.post);
 
 routes.post("/cores", Corescontroller.post);

@@ -13,6 +13,7 @@ class ComentarioController {
       data = new Date(),
       printcomentario,
       star,
+      liberar,
     } = req.body;
     const comentlist = await Comentarioclientes.create({
       user: user,
@@ -21,10 +22,17 @@ class ComentarioController {
       idproduto: idproduto,
       data: data,
       star: star,
+      liberar: liberar,
     });
     return res.json(comentlist);
   }
 
+  async del(req, res) {
+    const { _id } = req.params;
+    const del = await Comentarioclientes.deleteOne({ _id: _id });
+
+    return res.json(del);
+  }
   async index2(req, res) {
     const { idproduto } = req.query;
     const comentlist = await Comentarioclientes.find({
@@ -42,6 +50,7 @@ class ComentarioController {
       printcomentario,
       idproduto,
       star,
+      liberar,
     } = req.body;
     const comentlist = await Comentarioclientes.updateOne(
       { _id: _id },
@@ -52,6 +61,7 @@ class ComentarioController {
         printcomentario: printcomentario,
         data: data,
         star: star,
+        liberar: liberar,
       }
     );
     return res.json(comentlist);
