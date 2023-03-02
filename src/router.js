@@ -18,6 +18,9 @@ import Pergunrascontroller from "./controllers/Pergunrascontroller";
 import EditarSobre from "./controllers/EditarSobre";
 import EditarContato from "./controllers/EditarContato";
 import Politicadeprivacidade from "./controllers/Politicadeprivacidade";
+import ComocomprarController from "./controllers/ComocomprarController";
+
+
 
 const routes = new Router();
 
@@ -105,6 +108,12 @@ routes.post("/perguntas", Pergunrascontroller.post);
 routes.put("/perguntas/:_id", Pergunrascontroller.put);
 routes.delete("/perguntas/:_id", Pergunrascontroller.delete);
 routes.get("/perguntas", Pergunrascontroller.get);
+
+
+routes.post("/comocomprar", ComocomprarController.post);
+routes.put("/comocomprar/:_id", ComocomprarController.update);
+routes.delete("/comocomprar/:_id", ComocomprarController.delete);
+routes.get("/comocomprar", ComocomprarController.get);
 //rotas sobre
 
 routes.post("/sobre", EditarSobre.post);
