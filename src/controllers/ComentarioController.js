@@ -25,6 +25,12 @@ class ComentarioController {
     return res.json(comentlist);
   }
 
+  async del(req, res) {
+    const { _id } = req.params;
+    const del = await Comentarioclientes.deleteOne({ _id: _id });
+
+    return res.json(del);
+  }
   async index2(req, res) {
     const { idproduto } = req.query;
     const comentlist = await Comentarioclientes.find({
