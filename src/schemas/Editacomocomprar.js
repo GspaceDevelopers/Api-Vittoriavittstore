@@ -5,4 +5,4 @@ const Comocomprar = new Schema({
     urlbannermobile: String,
 })
 
-export default model(Comocomprar)
+export default model('Comocomprar',Comocomprar)
