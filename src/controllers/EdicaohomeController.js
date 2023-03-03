@@ -2,7 +2,7 @@ import Edicaohome from "../schemas/Edicaohome";
 
 class EdicaohomeController {
     async post(req, res) {
-        const { categoriabtnhome1: { img1, title1 }, categoriabtnhome2: { img2, title2 }, categoriabtnhome3: { img3, title3 }, categoriabtnhome4: { img4, title4 }, categoriabtnhome5: { img5, title5 }, categoriabtnhome6: { img6, title6 }, linkredes: { link1, link2, link3 }, emailloja, telefoneloja, cnpjloja, componentetexto1, parcelas, bannerpaginaprod, bannermodalpromocao, bannercentralhome, aparecercampobrinde, url1, url2, url3, url4, url5, url6, componentelogos: { logo1, logo2, logo3, logo4, logo5, logo6, logo7, }, backgoundhome: { background1, background2, background3, backgroundmobile1, backgroundmobile2, backgroundmobile3 }, componentetexto2, banners: { banner1, banner2, banner3, banner4, banner5, banner6, banner7 } } = req.body;
+        const {icon1,icon2,icon3, categoriabtnhome1: { img1, title1 }, categoriabtnhome2: { img2, title2 }, categoriabtnhome3: { img3, title3 }, categoriabtnhome4: { img4, title4 }, categoriabtnhome5: { img5, title5 }, categoriabtnhome6: { img6, title6 }, linkredes: { link1, link2, link3 }, emailloja, telefoneloja, cnpjloja, componentetexto1, parcelas, bannerpaginaprod, bannermodalpromocao, bannercentralhome, aparecercampobrinde, url1, url2, url3, url4, url5, url6, componentelogos: { logo1, logo2, logo3, logo4, logo5, logo6, logo7, }, backgoundhome: { background1, background2, background3, backgroundmobile1, backgroundmobile2, backgroundmobile3 }, componentetexto2, banners: { banner1, banner2, banner3, banner4, banner5, banner6, banner7 } } = req.body;
         const Edicaolist = await Edicaohome.create({
             componentetexto1: componentetexto1,
             parcelas: parcelas,
@@ -75,12 +75,15 @@ class EdicaohomeController {
                 img6: img6,
                 title6: title6,
             },
+            icon1:icon1,
+            icon2:icon2,
+            icon3:icon3,
         })
         return res.json(Edicaolist)
     }
     async update(req, res) {
         const { _id: _id } = req.params;
-        const { categoriabtnhome1: { img1, title1 }, categoriabtnhome2: { img2, title2 }, categoriabtnhome3: { img3, title3 }, categoriabtnhome4: { img4, title4 }, categoriabtnhome5: { img5, title5 }, categoriabtnhome6: { img6, title6 }, linkredes: { link1, link2, link3 }, emailloja, telefoneloja, cnpjloja, componentetexto1, parcelas, bannerpaginaprod, bannermodalpromocao, bannercentralhome, aparecercampobrinde, url1, url2, url3, url4, url5, url6, componentelogos: { logo1, logo2, logo3, logo4, logo5, logo6, logo7, }, backgoundhome: { background1, background2, background3, backgroundmobile1, backgroundmobile2, backgroundmobile3 }, componentetexto2, banners: { banner1, banner2, banner3, banner4, banner5, banner6, banner7 } } = req.body;
+        const { icon1,icon2,icon3,categoriabtnhome1: { img1, title1 }, categoriabtnhome2: { img2, title2 }, categoriabtnhome3: { img3, title3 }, categoriabtnhome4: { img4, title4 }, categoriabtnhome5: { img5, title5 }, categoriabtnhome6: { img6, title6 }, linkredes: { link1, link2, link3 }, emailloja, telefoneloja, cnpjloja, componentetexto1, parcelas, bannerpaginaprod, bannermodalpromocao, bannercentralhome, aparecercampobrinde, url1, url2, url3, url4, url5, url6, componentelogos: { logo1, logo2, logo3, logo4, logo5, logo6, logo7, }, backgoundhome: { background1, background2, background3, backgroundmobile1, backgroundmobile2, backgroundmobile3 }, componentetexto2, banners: { banner1, banner2, banner3, banner4, banner5, banner6, banner7 } } = req.body;
         const Edicaolist = await Edicaohome.updateOne({ _id: _id }, {
             componentetexto1: componentetexto1,
             parcelas: parcelas,
@@ -153,6 +156,9 @@ class EdicaohomeController {
                 img6: img6,
                 title6: title6,
             },
+            icon1:icon1,
+            icon2:icon2,
+            icon3:icon3,
         })
         return res.json(Edicaolist)
     }

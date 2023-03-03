@@ -73,6 +73,9 @@ const Edicaohome = new Schema({
     img6:String,
     title6:String,
     },
+    icon1:String,
+    icon2:String,
+    icon3:String
 
 })
 
